@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  user-select: none;
+  user-zoom: none;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #78c1f3;
+  align-items: center;
+}
+.wrapper {
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  border-radius: 18px;
+  background-color: white;
+  box-shadow: 0 0 18px 5px rgba(70, 70, 70, 0.332);
+}
+.clock {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  height: 80%;
+}
+.hours {
+  height: 100%;
+  width: 28%;
+  display: flex;
+}
+.minutes {
+  height: 100%;
+  width: 28%;
+  display: flex;
+}
+.colon {
+  height: 100%;
+  width: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.seconds {
+  height: 100%;
+  width: 28%;
+  display: flex;
+}
+.box {
+  width: 100%;
+  height: 35px;
+  background-color: rgba(0, 0, 0, 0.885);
+}
+.left,
+.right {
+  height: 100%;
+  width: 50%;
+  overflow: hidden;
+  border: 1px solid white;
+  background-color: rgba(0, 0, 0, 0.899);
+}
+.slider {
+  color: white;
+  height: 100%;
+  width: 100%;
+}
+.nums {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 8rem;
+  background-color: rgba(0, 0, 0, 0.899);
+  font-weight: 800;
+  height: 100%;
+}
+#secOnes {
+  transition: transform 0.3s ease-in-out;
+}
+#secTens {
+  transition: transform 0.6s ease-in-out;
+}
+#minOnes {
+  transition: transform 0.8s ease-in-out;
+}
+#minTens {
+  transition: transform 0.8s ease-in-out;
+}
+#hrsOnes {
+  transition: transform 1s ease-in-out;
+}
+#hrsTens {
+  transition: transform 1s ease-in-out;
+}
