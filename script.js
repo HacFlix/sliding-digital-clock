@@ -11,8 +11,8 @@ function setTime(time, tens, ones) {
     tens.style.transform = `translateY(-${Number(time[0]) * 100}%)`;
     ones.style.transform = `translateY(-${Number(time[1]) * 100}%)`;
   } else {
-    sec = sec.toString().split("");
-    sec.unshift("0");
+    time = time.toString().split("");
+    time.unshift("0");
     tens.style.transform = `translateY(-${Number(time[0]) * 100}%)`;
     ones.style.transform = `translateY(-${Number(time[1]) * 100}%)`;
   }
